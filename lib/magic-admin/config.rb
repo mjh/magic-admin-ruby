@@ -37,7 +37,8 @@ module MagicAdmin
     # Returns:
     #   installation machine user_name
     def self.user_name
-      Etc.getpwnam(Etc.getlogin).gecos.split(/,/).first
+      # Etc.getpwnam(Etc.getlogin).gecos.split(/,/).first
+      "System"
     end
 
     # Description:
